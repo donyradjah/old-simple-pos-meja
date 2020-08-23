@@ -81,12 +81,13 @@ public class MenuAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 produkViewHolder.txtQty.setText("");
                 produkViewHolder.txtQty.setVisibility(View.GONE);
                 produkViewHolder.btnTambah.setVisibility(View.GONE);
-                produkViewHolder.btnTambah.setVisibility(View.GONE);
+                produkViewHolder.btnKurang.setVisibility(View.GONE);
                 produkViewHolder.btnAddKeranjang.setVisibility(View.VISIBLE);
             }
 
-            if (produk.getStatus().equals("kososng")) {
+            if (produk.getStatus().equals("kosong")) {
                 produkViewHolder.txtQty.setText("Tidak Tersedia");
+                produkViewHolder.txtQty.setVisibility(View.VISIBLE);
                 produkViewHolder.btnAddKeranjang.setVisibility(View.GONE);
             }
 

@@ -29,4 +29,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent daftarMenu = new Intent(getApplicationContext(), DaftarMenuActivity.class);
         startActivity(daftarMenu);
     }
+
+    public void openDaftarTransksi(View view) {
+        Intent daftarTransksi = new Intent(getApplicationContext(), DaftarTransaksiActivity.class);
+        startActivity(daftarTransksi);
+    }
 }
